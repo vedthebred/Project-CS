@@ -15,12 +15,12 @@ What do I want to improve tomorrow?
 Date: 7/22/2026
 
 What did I learn today?
-    I learned how file directory works.
+    I learned how file directory works, and character encoding.
 What was difficult?
-    
+    The character encoding and viewport was a little difficult to understand but I got it.
 How did I solve it?
-
+    I just reviewed the info and implemented it.
 What am I proud of today?
-
+    I got progress toward Project CS
 What do I want to improve tomorrow?
-
+    Tmrw I want to finish the html skeleton and start the css portion.
