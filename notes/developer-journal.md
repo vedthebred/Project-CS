@@ -29,9 +29,9 @@ What do I want to improve tomorrow?
 Date: 7/23/2026
 
 What did I learn today?
-    I learned forms in HTML. I also learned basic css such as flexbox and grid.
+    I learned forms in HTML. I also learned basic css such as flexbox and grid. Another addition is typography and inheritance. A 4th addition is the idea that rem is relative while px is fixed.
 What was difficult?
-    Figuring out when to use flexbox and grid.
+    Finding the right typography.
 How did I solve it?
     I just changed the code over and over again until it looked right
 What am I proud of today?
