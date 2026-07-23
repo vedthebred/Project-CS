@@ -65,14 +65,52 @@
       <section>
         <h2>Developer Journal</h2>
         <form>
+          <label for="entry-title">Journal Entry Title</label>
+          <input
+            type="text"
+            id="entry-title"
+            name="entry-title"
+            placeholder="Ex. Learned forms in HTML"
+            minlength="2"
+            required
+          />
+
+          <label for="entry-date">Date</label>
+          <input
+            type="date"
+            id="entry-date"
+            name="entry-date"
+            placeholder="Ex. 7/23/2026"
+            minlength="7"
+            required
+          />
+
           <label for="learned">What did I learn today?</label>
-          <textarea id="learned" name="learned"></textarea>
+          <textarea
+            id="learned"
+            name="learned"
+            placeholder="Describe the main concept you learned today."
+            minlength="10"
+            required
+          ></textarea>
 
           <label for="difficult">What was difficult?</label>
-          <textarea id="difficult" name="difficult"></textarea>
+          <textarea
+            id="difficult"
+            name="difficult"
+            placeholder="Describe the challenges you faced."
+            minlength="10"
+            required
+          ></textarea>
 
           <label for="improve">What will I improve tomorrow?</label>
-          <textarea id="improve" name="improve"></textarea>
+          <textarea
+            id="improve"
+            name="improve"
+            placeholder="Describe the improvements you plan to make."
+            minlength="10"
+            required
+          ></textarea>
 
           <button type="submit">Save Journal Entry</button>
         </form>
