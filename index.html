@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Project CS - Home</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project CS - Home</title>
   </head>
   <body>
     <header>
@@ -16,15 +16,19 @@
       <p>
         My journey from a beginner to a full stack dev and technical founder.
       </p>
-      <nav>
-        <a href="index.html">Home</a>
+      <nav aria-label="Primary Navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="#current-quest">Current Quest</a>
+        <a href="#worlds">Worlds</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#developer-journal">Developer Journal</a>
         <a href="pages/about.html">About</a>
       </nav>
     </header>
 
     <main>
-      <section>
-        <h2>An Intro</h2>
+      <section id="introduction">
+        <h2>Beginning My Journey</h2>
         <p>
           I started my journey as a passionate teen with a goal. To become a
           full-stack developer and a technical founder. I have been learning and
@@ -33,7 +37,18 @@
         </p>
       </section>
 
-      <section>
+      <section id="journey-status">
+        <h2>Journey Status</h2>
+        <p>Current World: HTML Kingdom</p>
+        <p>Current Level: HTML Noob</p>
+        <label for="current-world-progress">Current World Progress:</label>
+        <progress id="current-world-progress" value="40" max="100">
+          40%
+        </progress>
+        <p>2 quests completed</p>
+      </section>
+
+      <section id="current-quest">
         <h2>Current Quest</h2>
         <p>
           Learn the foundations of HTML and build the first Project CS HTML
@@ -42,7 +57,7 @@
         <button type="button">Continue Journey</button>
       </section>
 
-      <section>
+      <section id="learning-path">
         <h2>Current Learning Path</h2>
         <ol>
           <li>Learn HTML</li>
@@ -52,8 +67,8 @@
         </ol>
       </section>
 
-      <section>
-        <h2>Future Worlds</h2>
+      <section id="worlds">
+        <h2>Programming Worlds</h2>
         <ul>
           <li>Python Academy</li>
           <li>HTML Kingdom</li>
@@ -62,8 +77,32 @@
         </ul>
       </section>
 
-      <section>
+      <section id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+          <li>Version Control Initiate - Created first Git repo</li>
+          <li>HTML Noob - Built first semantic HTML webpage</li>
+        </ul>
+      </section>
+
+      <section id="developer-journal">
         <h2>Developer Journal</h2>
+
+        <article>
+          <h3>Learning HTML Forms</h3>
+          <p><time datetime="2026-07-23">July 23, 2026</time></p>
+          <p>I learned how to make and implement forms in HTML.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>Project CS - Learning by Building</p>
+    </footer>
+  </body>
+</html>
+
+<!--  This is a form.
         <form>
           <label for="entry-title">Journal Entry Title</label>
           <input
@@ -76,14 +115,7 @@
           />
 
           <label for="entry-date">Date</label>
-          <input
-            type="date"
-            id="entry-date"
-            name="entry-date"
-            placeholder="Ex. 7/23/2026"
-            minlength="7"
-            required
-          />
+          <input type="date" id="entry-date" name="entry-date" required />
 
           <label for="learned">What did I learn today?</label>
           <textarea
@@ -113,12 +145,4 @@
           ></textarea>
 
           <button type="submit">Save Journal Entry</button>
-        </form>
-      </section>
-    </main>
-
-    <footer>
-      <p>Project CS - Learning by Building</p>
-    </footer>
-  </body>
-</html>
+        </form>-->

@@ -24,3 +24,86 @@ What am I proud of today?
     I got progress toward Project CS
 What do I want to improve tomorrow?
     Tmrw I want to finish the html skeleton and start the css portion.
+
+
+Date: 7/23/2026
+
+What did I learn today?
+    I learned forms in HTML.
+What was difficult?
+    
+How did I solve it?
+    
+What am I proud of today?
+    
+What do I want to improve tomorrow?
+
+
+
+Date: 7/24/2026
+
+What did I learn today?
+    
+What was difficult?
+    
+How did I solve it?
+    
+What am I proud of today?
+    
+What do I want to improve tomorrow?
+
+
+
+Date: 7/25/2026
+
+What did I learn today?
+    
+What was difficult?
+    
+How did I solve it?
+    
+What am I proud of today?
+    
+What do I want to improve tomorrow?
+
+
+
+Date: 7/26/2026
+
+What did I learn today?
+    
+What was difficult?
+    
+How did I solve it?
+    
+What am I proud of today?
+    
+What do I want to improve tomorrow?
+    
+
+
+Date: 7/27/2026
+
+What did I learn today?
+    
+What was difficult?
+    
+How did I solve it?
+    
+What am I proud of today?
+    
+What do I want to improve tomorrow?
+
+
+
+Date: 7/28/2026
+
+What did I learn today?
+    
+What was difficult?
+    
+How did I solve it?
+    
+What am I proud of today?
+    
+What do I want to improve tomorrow?
