@@ -1,7 +1,14 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #f4f4f4;
   font-family: system-ui, Arial, sans-serif;
   line-height: 1.6;
+  margin: 0;
 }
 
 h1 {
@@ -99,4 +106,40 @@ footer {
 .primary-nav a[aria-current="page"] {
   font-weight: bold;
   background-color: #aaacaf;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: rgb(159, 184, 167);
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.logo {
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+}
+
+.brand-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.brand-text h1,
+.brand-text p {
+  margin: 0;
 }
