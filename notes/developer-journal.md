@@ -43,15 +43,15 @@ What do I want to improve tomorrow?
 Date: 7/24/2026
 
 What did I learn today?
-    
+    I couldnt work today
 What was difficult?
-    
+    I couldnt work today
 How did I solve it?
-    
+    I couldnt work today
 What am I proud of today?
-    
+    I couldnt work today
 What do I want to improve tomorrow?
-
+    I want to actually work tmrw.
 
 
 Date: 7/25/2026
