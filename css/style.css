@@ -1,3 +1,13 @@
+:root {
+  --main-text: #1d3557;
+  --main-button: #92da9b;
+  --button-hover: #0d5fda;
+  --background-color: #f4f4f4;
+  --panel-background: white;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --border-color: #cccccc;
+}
+
 *,
 *::before,
 *::after {
@@ -5,14 +15,14 @@
 }
 
 body {
-  background-color: #f4f4f4;
+  background-color: var(--background-color);
   font-family: system-ui, Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
 }
 
 h1 {
-  color: #1d3557;
+  color: var(--main-text);
   font-size: 2.5rem;
 }
 
@@ -25,7 +35,7 @@ h3 {
 }
 
 p {
-  color: #1d3557;
+  color: var(--main-text);
   font-size: 1rem;
 }
 
@@ -34,16 +44,16 @@ footer {
 }
 
 a {
-  color: #1d3557;
+  color: var(--main-text);
   text-decoration: none;
 }
 
 .panel {
-  background-color: white;
+  background-color: var(--panel-background);
   padding: 20px;
   margin: 0 0 20px;
-  border: 1px solid #cccccc;
-  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color);
+  box-shadow: 5px 5px 2px var(--shadow-color);
 }
 
 .page-layout {
@@ -56,11 +66,11 @@ a {
 }
 
 .sidebar {
-  background-color: white;
+  background-color: var(--panel-background);
   padding: 20px;
-  border: 1px solid #cccccc;
+  border: 1px solid var(--border-color);
   align-self: start;
-  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 2px var(--shadow-color);
 }
 
 .sidebar ul {
@@ -86,14 +96,14 @@ a {
   border-radius: 4px;
   padding: 2px 4px;
   background-color: #e0e0e0;
-  color: #1d3557;
+  color: var(--main-text);
   transition:
     background-color 0.2s ease,
     transform 0.2s ease;
 }
 
 .primary-nav a:hover {
-  background-color: #0d5fda;
+  background-color: var(--button-hover);
   color: white;
   transform: scale(1.1);
 }
@@ -106,7 +116,7 @@ a {
 
 .primary-nav a[aria-current="page"] {
   font-weight: bold;
-  background-color: #92da9b;
+  background-color: var(--main-button);
 }
 
 .site-header {
@@ -149,9 +159,9 @@ a {
   display: block;
   padding: 8px 0;
   text-decoration: none;
-  color: #1d3557;
+  color: var(--main-text);
   border-radius: 4px;
-  background-color: #92da9b;
+  background-color: var(--main-button);
   text-align: center;
   margin-bottom: 5px;
   transition:
@@ -160,10 +170,9 @@ a {
 }
 
 .sidebar a:hover {
-  background-color: #0d5fda;
+  background-color: var(--button-hover);
   color: white;
   transform: scale(1.1);
-  
 }
 
 .sidebar a:focus-visible {
