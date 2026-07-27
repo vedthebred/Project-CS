@@ -66,9 +66,9 @@ I want to continue the css
 Date: 7/26/2026
 
 What did I learn today?
-:root(Css variables), reusable button styling and button states, css positioning
+:root(Css variables), reusable button styling and button states, css positioning, responsive design.
 What was difficult?
-Learning the positioning values
+Learning the positioning values, and understanding responsive design through media inqueries. Also fixing my own site for mobile support took extra effort.
 How did I solve it?
 I implemented a few into project CS
 What am I proud of today?
