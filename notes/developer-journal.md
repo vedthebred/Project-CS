@@ -1,109 +1,101 @@
 Date: 7/21/2026
 
 What did I learn today?
-    I learned basic git commands
+I learned basic git commands
 What was difficult?
-    learning the git commands and remembering how to use them
+learning the git commands and remembering how to use them
 How did I solve it?
-    By using them more
+By using them more
 What am I proud of today?
-    I started Project CS
+I started Project CS
 What do I want to improve tomorrow?
-    My git commands and my actual structure of Project CS
-
+My git commands and my actual structure of Project CS
 
 Date: 7/22/2026
 
 What did I learn today?
-    I learned how file directory works, and character encoding.
+I learned how file directory works, and character encoding.
 What was difficult?
-    The character encoding and viewport was a little difficult to understand but I got it.
+The character encoding and viewport was a little difficult to understand but I got it.
 How did I solve it?
-    I just reviewed the info and implemented it.
+I just reviewed the info and implemented it.
 What am I proud of today?
-    I got progress toward Project CS
+I got progress toward Project CS
 What do I want to improve tomorrow?
-    Tmrw I want to finish the html skeleton and start the css portion.
-
+Tmrw I want to finish the html skeleton and start the css portion.
 
 Date: 7/23/2026
 
 What did I learn today?
-    I learned forms in HTML. I also learned basic css such as flexbox and grid. Another addition is typography and inheritance. A 4th addition is the idea that rem is relative while px is fixed.
+I learned forms in HTML. I also learned basic css such as flexbox and grid. Another addition is typography and inheritance. A 4th addition is the idea that rem is relative while px is fixed.
 What was difficult?
-    Finding the right typography.
+Finding the right typography.
 How did I solve it?
-    I just changed the code over and over again until it looked right
+I just changed the code over and over again until it looked right
 What am I proud of today?
-    I started the css on Project CS
+I started the css on Project CS
 What do I want to improve tomorrow?
-    The looks of the webpage.
-
+The looks of the webpage.
 
 Date: 7/24/2026
 
 What did I learn today?
-    I couldnt work today
+I couldnt work today
 What was difficult?
-    I couldnt work today
+I couldnt work today
 How did I solve it?
-    I couldnt work today
+I couldnt work today
 What am I proud of today?
-    I couldnt work today
+I couldnt work today
 What do I want to improve tomorrow?
-    I want to actually work tmrw.
-
+I want to actually work tmrw.
 
 Date: 7/25/2026
 
 What did I learn today?
-    
+I couldnt work today
 What was difficult?
-    
+I couldnt work today
 How did I solve it?
-    
+I couldnt work today
 What am I proud of today?
-    
+I couldnt work today
 What do I want to improve tomorrow?
-
-
+I want to continue the css
 
 Date: 7/26/2026
 
 What did I learn today?
-    
+:root(Css variables), reusable button styling and button states, css positioning
 What was difficult?
-    
+Learning the positioning values
 How did I solve it?
-    
+I implemented a few into project CS
 What am I proud of today?
-    
+I did lots of css toward my project
 What do I want to improve tomorrow?
-    
-
+My typing speed, and not looking at keyboard when typing.
 
 Date: 7/27/2026
 
 What did I learn today?
-    
+
 What was difficult?
-    
+
 How did I solve it?
-    
+
 What am I proud of today?
-    
+
 What do I want to improve tomorrow?
-
-
 
 Date: 7/28/2026
 
 What did I learn today?
-    
+
 What was difficult?
-    
+
 How did I solve it?
-    
+
 What am I proud of today?
-    
+
 What do I want to improve tomorrow?

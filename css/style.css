@@ -5,7 +5,7 @@
   --background-color: #f4f4f4;
   --panel-background: white;
   --shadow-color: rgba(0, 0, 0, 0.1);
-  --border-color: #cccccc;
+  --panel-border-color: #cccccc;
 }
 
 *,
@@ -52,7 +52,7 @@ a {
   background-color: var(--panel-background);
   padding: 20px;
   margin: 0 0 20px;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--panel-border-color);
   box-shadow: 5px 5px 2px var(--shadow-color);
 }
 
@@ -68,9 +68,11 @@ a {
 .sidebar {
   background-color: var(--panel-background);
   padding: 20px;
-  border: 1px solid var(--border-color);
-  align-self: start;
+  border: 1px solid var(--panel-border-color);
   box-shadow: 5px 5px 2px var(--shadow-color);
+  position: sticky;
+  top: 10px;
+  align-self: start;
 }
 
 .sidebar ul {
@@ -81,6 +83,9 @@ a {
 @media (max-width: 700px) {
   .page-layout {
     grid-template-columns: 1fr;
+  }
+  .sidebar {
+    position: static;
   }
 }
 
@@ -117,6 +122,10 @@ a {
 .primary-nav a[aria-current="page"] {
   font-weight: bold;
   background-color: var(--main-button);
+}
+
+.primary-nav a:active {
+  background-color: #243827;
 }
 
 .site-header {
@@ -179,4 +188,44 @@ a {
   outline: 2px solid black;
   outline-offset: 2px;
   transform: scale(1.1);
+}
+
+.sidebar a:active {
+  background-color: #243827;
+}
+
+.btn {
+  background-color: var(--main-button);
+  color: var(--main-text);
+  padding: 10px 10px;
+  border: none;
+  border-radius: 10px;
+  font: inherit;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+  box-shadow: 2px 2px 1px var(--shadow-color);
+}
+
+.btn:not(:disabled):hover {
+  background-color: var(--button-hover);
+  color: white;
+  transform: scale(1.1);
+}
+
+.btn:focus-visible {
+  outline: 2px solid black;
+  outline-offset: 2px;
+  transform: scale(1.1);
+}
+
+.btn:not(:disabled):active {
+  background-color: #243827;
+}
+
+.btn:disabled {
+  opacity: 50%;
+  cursor: not-allowed;
+  transform: none;
 }
