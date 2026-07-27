@@ -245,6 +245,22 @@ a {
   min-height: 150px;
 }
 
+.world-current {
+  
+}
+
+.world-unlocked {
+}
+
+.world-locked {
+  cursor: not-allowed;
+}
+
+.world-panel h3,
+.world-panel p {
+  margin: 0;
+}
+
 @media (max-width: 900px) {
   .page-layout {
     grid-template-columns: 1fr;
