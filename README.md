@@ -1,7 +1,7 @@
 # Project CS
 
 > A long-term, hands-on journey from beginner programmer to technical founder.
-> Project CS is a planned gamified programming-learning platform. Development is temporarily paused while I build my personal software-development portfolio and strengthen my HTML, CSS, and JavaScript skills.
+> Project CS is a planned documentation of my journey from nothing to my goal.
 
 Project CS is a personal software engineering project that will grow alongside my programming knowledge. Its purpose is not only to teach me how to code, but also to document how I learn to design, build, test, debug, and improve real software.
 
