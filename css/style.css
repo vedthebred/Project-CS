@@ -231,8 +231,10 @@ a {
 
 .worlds-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(2, minmax(0, 300px));
+  justify-content: space-evenly;
+  row-gap: 20px;
+  column-gap: 0;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -241,9 +243,9 @@ a {
 .world-panel {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
-  text-align: center;
+  text-align: left;
   padding: 16px 24px;
   border: 3px solid black;
   border-radius: 20px;
@@ -277,6 +279,7 @@ a {
 .world-panel p {
   margin: 0;
   color: inherit;
+  width: 100%;
 }
 
 .project-card {
@@ -347,5 +350,9 @@ a {
     flex-direction: column;
     justify-content: center;
     width: 100%;
+  }
+  .worlds-list {
+    grid-template-columns: minmax(0, 300px);
+    justify-content: center;
   }
 }
