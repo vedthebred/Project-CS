@@ -6,6 +6,14 @@
   --panel-background: white;
   --shadow-color: rgba(0, 0, 0, 0.1);
   --panel-border-color: #cccccc;
+  --current-world-background: #e7f8ed;
+  --current-world-border: #2f9e5b;
+  --unlocked-world-background: #edf4ff;
+  --unlocked-world-border: #5b7fbd;
+  --locked-world-background: #eceff3;
+  --locked-world-border: #9aa3ad;
+  --project-background: #fff5d9;
+  --project-border: #d69e2e;
 }
 
 *,
@@ -243,22 +251,85 @@ a {
   color: white;
   box-shadow: 4px 4px 1px var(--shadow-color);
   min-height: 150px;
+  gap: 10px;
 }
 
 .world-current {
-  
+  background-color: var(--current-world-background);
+  color: #163f2a;
+  border-color: var(--current-world-border);
 }
 
 .world-unlocked {
+  background-color: var(--unlocked-world-background);
+  border-color: var(--unlocked-world-border);
+  color: #1d3557;
 }
 
 .world-locked {
   cursor: not-allowed;
+  background-color: var(--locked-world-background);
+  border-color: var(--locked-world-border);
+  color: #4b5563;
 }
 
 .world-panel h3,
 .world-panel p {
   margin: 0;
+  color: inherit;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 20px;
+  border: 3px solid var(--project-border);
+  border-radius: 14px;
+  box-shadow: 4px 4px 1px var(--shadow-color);
+  background-color: var(--project-background);
+  color: #3f3214;
+}
+
+.project-card h3,
+.project-card p {
+  margin: 0;
+  color: inherit;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.status-current {
+  background-color: rgb(77, 218, 35);
+  border: 2px solid black;
+  color: #000000;
+}
+
+.status-locked {
+  background-color: #af4b4b;
+  border: 2px solid black;
+  color: white;
+}
+
+.status-unlocked {
+  background-color: rgb(4, 4, 138);
+  border: 2px solid white;
+  color: white;
+}
+
+.status-progress {
+  background-color: darkgoldenrod;
+  border: 2px solid black;
+  color: black;
 }
 
 @media (max-width: 900px) {
