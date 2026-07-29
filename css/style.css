@@ -351,6 +351,9 @@ a {
 }
 
 .tech-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   padding: 4px 9px;
   border: 1px solid #d4b45f;
   background-color: #fffaf0;
@@ -365,6 +368,13 @@ a {
 .project-card p {
   margin: 0;
   color: inherit;
+}
+
+.tech-icon {
+  width: 1rem;
+  height: 1rem;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 @media (max-width: 900px) {
