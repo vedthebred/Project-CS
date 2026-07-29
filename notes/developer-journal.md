@@ -79,19 +79,20 @@ My typing speed, and not looking at keyboard when typing.
 Date: 7/27/2026
 
 What did I learn today?
-
+I learned lots of elements of css
 What was difficult?
-
+Applying the css properly for a nice and clean look
 How did I solve it?
-
+I just changed the styling until it looked good
 What am I proud of today?
-
+I made the styling look nice of the world cards and the project cards.
 What do I want to improve tomorrow?
+My css, and the looks of more of the hoempage.
 
 Date: 7/28/2026
 
 What did I learn today?
-
+Links and buttons and when to use them.
 What was difficult?
 
 How did I solve it?
