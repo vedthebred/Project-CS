@@ -1,11 +1,11 @@
 :root {
-  --main-text: #1d3557;
-  --main-button: #92da9b;
-  --button-hover: #0d5fda;
-  --background-color: #f4f4f4;
-  --panel-background: white;
-  --shadow-color: rgba(0, 0, 0, 0.1);
-  --panel-border-color: #cccccc;
+  --main-text: #1f2329;
+  --main-button: #b6ff2e;
+  --button-hover: #2457ff;
+  --background-color: #1f2329;
+  --panel-background: #dff7ff;
+  --shadow-color: rgba(0, 0, 0, 0.35);
+  --panel-border-color: #2457ff;
   --current-world-background: #e7f8ed;
   --current-world-border: #2f9e5b;
   --unlocked-world-background: #edf4ff;
@@ -14,12 +14,21 @@
   --locked-world-border: #9aa3ad;
   --project-background: #fff5d9;
   --project-border: #d69e2e;
+  --header-background: #2457ff;
+  --header-text: #ffffff;
+  --nav-hover-background: #1f2329;
+  --nav-hover-text: #ffffff;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+.site-header h1,
+.site-header p {
+  color: var(--header-text);
 }
 
 body {
@@ -60,7 +69,7 @@ a {
   background-color: var(--panel-background);
   padding: 20px;
   margin: 0 0 20px;
-  border: 1px solid var(--panel-border-color);
+  border: 2px solid var(--panel-border-color);
   box-shadow: 5px 5px 2px var(--shadow-color);
 }
 
@@ -97,9 +106,10 @@ a {
 
 .primary-nav a {
   text-decoration: none;
-  border-radius: 4px;
-  padding: 2px 4px;
-  background-color: #e0e0e0;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 6px 12px;
+  background-color: var(--panel-background);
   color: var(--main-text);
   transition:
     background-color 0.2s ease,
@@ -107,8 +117,8 @@ a {
 }
 
 .primary-nav a:hover {
-  background-color: var(--button-hover);
-  color: white;
+  background-color: var(--nav-hover-background);
+  color: var(--nav-hover-text);
   transform: scale(1.1);
 }
 
@@ -134,7 +144,7 @@ a {
   gap: 20px;
   flex-wrap: wrap;
   padding: 20px;
-  background-color: rgb(159, 184, 167);
+  background-color: var(--header-background);
 }
 
 .brand-text {
@@ -381,10 +391,10 @@ a {
 }
 
 .project-actions {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
-  gap:10px;
-  margin-top:5px;
+  gap: 10px;
+  margin-top: 5px;
 }
 
 @media (max-width: 900px) {

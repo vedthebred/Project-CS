@@ -92,11 +92,12 @@ My css, and the looks of more of the hoempage.
 Date: 7/28/2026
 
 What did I learn today?
-Links and buttons and when to use them.
+Links and buttons and when to use them. Color systems
 What was difficult?
-I had a little bit of a hard time deciding when to use links and buttons.
+Getting the right colors to use for the scheme
 How did I solve it?
-I made 2 questions to ask to differentiate between the use cases of both. 1. Is this an action or does it lead somewhere? 2. Can I use a button with a link?
+I looked up good color combos and combined a few that I liked
 What am I proud of today?
-
+I made the website look nicer
 What do I want to improve tomorrow?
+I want to continue to improve the css
