@@ -92,19 +92,53 @@
         <section id="current-quest" class="panel">
           <h2>Current Quest</h2>
           <p>
-            Improve the Project CS homepage with responsive world and project
-            cards.
+            Improve the Project CS homepage with responsive design and improved
+            styling.
           </p>
           <a href="#projects" class="btn">Continue Journey</a>
         </section>
 
         <section id="learning-path" class="panel">
           <h2>Current Learning Path</h2>
-          <ol>
-            <li>Learn HTML</li>
-            <li>Build HTML Skeleton</li>
-            <li>Learn CSS</li>
-            <li>Learn JavaScript</li>
+
+          <ol class="learning-roadmap">
+            <li class="path-step path-complete">
+              <span class="path-marker" aria-hidden="true">✓</span>
+
+              <div class="path-content">
+                <p class="path-title">Learn HTML</p>
+                <span class="path-status">Complete</span>
+              </div>
+            </li>
+
+            <li class="path-step path-complete">
+              <span class="path-marker" aria-hidden="true">✓</span>
+
+              <div class="path-content">
+                <p class="path-title">Build HTML Skeleton</p>
+                <span class="path-status">Complete</span>
+              </div>
+            </li>
+
+            <!-- This is not actually the current step I want to add more steps to this that are completed, but have to make them significant, cant just have lots of steps or website will be too big.-->
+            <li class="path-step path-current" aria-current="step">
+              <span class="path-marker" aria-hidden="true">3</span>
+
+              <div class="path-content">
+                <p class="path-title">Learn CSS</p>
+                <span class="path-status">Current</span>
+              </div>
+            </li>
+            <!-- Add more steps -->
+            <li class="path-step path-locked">
+              <span class="path-marker" aria-hidden="true">4</span>
+
+              <div class="path-content">
+                <p class="path-title">Learn JavaScript</p>
+                <span class="path-status">Locked</span>
+              </div>
+            </li>
+            <!-- Add more steps -->
           </ol>
         </section>
 
