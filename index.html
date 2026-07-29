@@ -75,10 +75,18 @@
               <dd>2 Completed</dd>
             </div>
           </dl>
-          <label for="current-world-progress">Current World Progress:</label>
-          <progress id="current-world-progress" value="40" max="100">
-            40%
-          </progress>
+
+          <div class="progress-block">
+            <div class="progress-heading">
+              <label for="current-world-progress">Current World Progress:</label
+              ><!--Prettier Formatting is wierd here-->
+              <span>40%</span>
+            </div>
+
+            <progress id="current-world-progress" value="40" max="100">
+              40%
+            </progress>
+          </div>
         </section>
 
         <section id="current-quest" class="panel">

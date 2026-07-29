@@ -18,6 +18,9 @@
   --header-text: #ffffff;
   --nav-hover-background: #1f2329;
   --nav-hover-text: #ffffff;
+  --progress-track: #b8d8e3;
+  --progress-fill: #b6ff2e;
+  --progress-border: #2457ff;
 }
 
 *,
@@ -430,6 +433,37 @@ footer p {
   font-size: 1rem;
   font-weight: 700;
   color: var(--main-text);
+}
+
+.progress-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+progress {
+  width: 100%;
+  height: 18px;
+  border: 2px solid var(--progress-border);
+  border-radius: 999px;
+  overflow: hidden;
+  background-color: var(--progress-track);
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+progress::-webkit-progress-bar {
+  background-color: var(--progress-track);
+}
+
+progress::-webkit-progress-value {
+  background-color: var(--progress-fill);
+}
+
+.progress-block {
+  display: grid;
+  gap: 8px;
 }
 
 @media (max-width: 900px) {
