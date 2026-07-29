@@ -92,7 +92,7 @@ My css, and the looks of more of the hoempage.
 Date: 7/28/2026
 
 What did I learn today?
-Links and buttons and when to use them. Color systems
+Links and buttons and when to use them. Color systems. Description lists, description terms, and description details.
 What was difficult?
 Getting the right colors to use for the scheme
 How did I solve it?

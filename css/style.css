@@ -401,6 +401,37 @@ footer p {
   color: var(--header-text);
 }
 
+.status-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin: 0 0 20px;
+}
+
+.status-item {
+  padding: 14px;
+  border: 1px solid var(--panel-border-color);
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 2px 2px 0 var(--shadow-color);
+}
+
+.status-item dt {
+  margin-bottom: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #475569;
+}
+
+.status-item dd {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--main-text);
+}
+
 @media (max-width: 900px) {
   .page-layout {
     grid-template-columns: 1fr;
