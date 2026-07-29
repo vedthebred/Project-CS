@@ -94,9 +94,9 @@ Date: 7/28/2026
 What did I learn today?
 Links and buttons and when to use them.
 What was difficult?
-
+I had a little bit of a hard time deciding when to use links and buttons.
 How did I solve it?
-
+I made 2 questions to ask to differentiate between the use cases of both. 1. Is this an action or does it lead somewhere? 2. Can I use a button with a link?
 What am I proud of today?
 
 What do I want to improve tomorrow?
