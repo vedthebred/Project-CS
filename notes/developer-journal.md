@@ -116,13 +116,14 @@ I want to start using JavaScript and finish majority of css.
 
 Date: 7/30/2026
 What did I learn today?
-
+Relative Paths
 What was difficult?
-
+Nothing was really difficult
 How did I solve it?
-
+I just added a page and linked it
 What am I proud of today?
-
+I learned relative paths through files which is very important for almost any coding language.
 What do I want to improve tomorrow?
+I wont be able to make any progres for the next week.
 
 7/31 - 8/9: Away From Setup, No Progress.

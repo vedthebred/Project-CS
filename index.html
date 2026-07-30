@@ -21,6 +21,7 @@
       </div>
       <nav aria-label="Primary Navigation" class="primary-nav">
         <a href="index.html" aria-current="page">Home</a>
+        <a href="pages/projects.html">Projects </a>
         <a href="pages/about.html">About</a>
       </nav>
     </header>
@@ -68,7 +69,7 @@
             </div>
             <div class="status-item">
               <dt>Current Focus</dt>
-              <dd>Grid and Visual Roadmap Design</dd>
+              <dd>Multi-Page Website Architecture</dd>
             </div>
             <div class="status-item">
               <dt>Achievements</dt>
@@ -91,7 +92,10 @@
 
         <section id="current-quest" class="panel">
           <h2>Current Quest</h2>
-          <p>Build a visual, game-inspired learning roadmap for Project CS.</p>
+          <p>
+            Build the full Projects page and connect it to the Project CS
+            homepage
+          </p>
           <a href="#projects" class="btn">Continue Journey</a>
         </section>
 
@@ -387,60 +391,68 @@
 
         <section id="projects" class="panel">
           <h2>Projects</h2>
-          <article class="project-card">
-            <h3>Project CS</h3>
-            <span class="status-badge status-progress">In Progress</span>
-            <p>
-              A living dev-journey website that grows as I learn new skills and
-              complete new projects.
-            </p>
-            <h4>Technologies</h4>
-            <ul class="tech-list">
-              <li class="tech-tag">
-                <img
-                  src="assets/images/html-logo.png"
-                  class="tech-icon"
-                  alt=""
-                />
-                HTML
-              </li>
-              <li class="tech-tag">
-                <img
-                  src="assets/images/css-logo.png"
-                  class="tech-icon"
-                  alt=""
-                />
-                CSS
-              </li>
-              <!--Javascript will be added later-->
-              <li class="tech-tag">
-                <img
-                  src="assets/images/git-logo.png"
-                  class="tech-icon"
-                  alt=""
-                />
-                Git
-              </li>
-              <li class="tech-tag">
-                <img
-                  src="assets/images/github-logo.png"
-                  class="tech-icon"
-                  alt=""
-                />
-                GitHub
-              </li>
-            </ul>
-            <p>Current Work: CSS Grid and Visual Roadmap Design</p>
-            <div class="project-actions">
-              <a
-                href="https://github.com/vedthebred/Project-CS"
-                class="btn"
-                target="_blank"
-                rel="noopener noreferrer"
-                >View Source</a
-              >
-            </div>
-          </article>
+          <div class="projects-grid">
+            <article class="project-card">
+              <h3>Project CS</h3>
+              <span class="status-badge status-progress">In Progress</span>
+              <p>
+                A living dev-journey website that grows as I learn new skills
+                and complete new projects.
+              </p>
+              <h4>Technologies</h4>
+              <ul class="tech-list">
+                <li class="tech-tag">
+                  <img
+                    src="assets/images/html-logo.png"
+                    class="tech-icon"
+                    alt=""
+                  />
+                  HTML
+                </li>
+                <li class="tech-tag">
+                  <img
+                    src="assets/images/css-logo.png"
+                    class="tech-icon"
+                    alt=""
+                  />
+                  CSS
+                </li>
+                <!--Javascript will be added later-->
+                <li class="tech-tag">
+                  <img
+                    src="assets/images/git-logo.png"
+                    class="tech-icon"
+                    alt=""
+                  />
+                  Git
+                </li>
+                <li class="tech-tag">
+                  <img
+                    src="assets/images/github-logo.png"
+                    class="tech-icon"
+                    alt=""
+                  />
+                  GitHub
+                </li>
+              </ul>
+              <p>
+                Current Work: Building the Projects page and multi-page
+                navigation.
+              </p>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/vedthebred/Project-CS"
+                  class="btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View Source</a
+                >
+              </div>
+            </article>
+          </div>
+          <div class="project-section-actions">
+            <a href="pages/projects.html" class="btn">View All Projects</a>
+          </div>
         </section>
 
         <section id="achievements" class="panel">
