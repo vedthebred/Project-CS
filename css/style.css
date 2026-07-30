@@ -21,6 +21,9 @@
   --progress-track: #b8d8e3;
   --progress-fill: #b6ff2e;
   --progress-border: #2457ff;
+  --roadmap-route: #9aa3ad;
+  --roadmap-route-complete: #2457ff;
+  --final-step-border: #d49a26;
 }
 
 *,
@@ -475,13 +478,14 @@ progress::-moz-progress-bar {
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: center;
-  row-gap: 3rem;
-  column-gap: 12px;
+  row-gap: 0;
+  column-gap: 0;
   list-style: none;
   margin: 0;
   padding: 0;
   position: relative;
-  grid-auto-rows: minmax(9rem, auto);
+  grid-auto-rows: 11rem;
+  z-index: 1;
 }
 
 .path-step {
@@ -504,6 +508,8 @@ progress::-moz-progress-bar {
   border-radius: 50%;
   font-weight: 700;
   box-shadow: 0 5px 0 var(--shadow-color);
+  position: relative;
+  z-index: 2;
 }
 
 .path-content {
@@ -537,14 +543,14 @@ progress::-moz-progress-bar {
 }
 
 .path-locked {
-  color: #4b5563;
-  opacity: 0.75;
+  color: #6b7280;
 }
 
 .path-locked .path-marker {
   background-color: #d1d5db;
   color: #4b5563;
   border-color: #9aa3ad;
+  opacity: 1;
 }
 
 .path-left {
@@ -567,6 +573,32 @@ progress::-moz-progress-bar {
   margin: 0;
   font-size: 0.8rem;
   font-weight: 600;
+}
+
+.path-final .path-marker {
+  border-color: var(--final-step-border);
+  border-width: 4px;
+}
+
+.roadmap-stage {
+  position: relative;
+}
+
+.roadmap-path {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.roadmap-route {
+  fill: none;
+  stroke: var(--roadmap-route);
+  stroke-width: 5px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 @media (max-width: 900px) {

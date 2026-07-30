@@ -101,3 +101,29 @@ What am I proud of today?
 I made the website look nicer
 What do I want to improve tomorrow?
 I want to continue to improve the css
+
+Date: 7/29/2026
+What did I learn today?
+I learned about some more CSS Properties and SVGs
+What was difficult?
+Learning SVG Commands
+How did I solve it?
+I practiced but still have difficulty with them
+What am I proud of today?
+I made the visual roadmap of Prject CS look 10 tims better than before
+What do I want to improve tomorrow?
+I want to start using JavaScript
+
+Date: 7/30/2026
+What did I learn today?
+
+What was difficult?
+
+How did I solve it?
+
+What am I proud of today?
+
+What do I want to improve tomorrow?
+
+
+7/31 - 8/9: Away From Setup, No Progress.
