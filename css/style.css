@@ -601,24 +601,74 @@ progress::-moz-progress-bar {
   stroke-linejoin: round;
 }
 
+.roadmap-path-mobile {
+  display: none;
+}
+
 @media (max-width: 900px) {
   .page-layout {
     grid-template-columns: 1fr;
   }
+
   .sidebar {
     position: static;
   }
+
   .site-header {
     flex-direction: column;
     align-items: center;
   }
+
   .brand-wrapper {
     flex-direction: column;
     justify-content: center;
     width: 100%;
   }
+
   .worlds-list {
     grid-template-columns: minmax(0, 300px);
     justify-content: center;
+  }
+}
+
+@media (max-width: 650px) {
+  #learning-path {
+    padding-inline: 14px;
+  }
+
+  .roadmap-path-mobile {
+    display: block;
+  }
+
+  .roadmap-path-desktop {
+    display: none;
+  }
+
+  .learning-roadmap {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 11rem;
+    padding-inline: 1rem;
+  }
+
+  .path-left,
+  .path-center,
+  .path-right {
+    grid-column: 1;
+  }
+
+  .path-step {
+    width: min(10rem, 100%);
+  }
+
+  .path-left {
+    justify-self: start;
+  }
+
+  .path-center {
+    justify-self: center;
+  }
+
+  .path-right {
+    justify-self: end;
   }
 }
