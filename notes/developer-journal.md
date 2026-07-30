@@ -106,13 +106,13 @@ Date: 7/29/2026
 What did I learn today?
 I learned about some more CSS Properties and SVGs
 What was difficult?
-Learning SVG Commands
+Learning SVG Commands and lining up the line with the rest of the path markers
 How did I solve it?
-I practiced but still have difficulty with them
+I practiced but still have difficulty with them. I just kept trying different numbers until it lined up.
 What am I proud of today?
 I made the visual roadmap of Prject CS look 10 tims better than before
 What do I want to improve tomorrow?
-I want to start using JavaScript
+I want to start using JavaScript and finish majority of css.
 
 Date: 7/30/2026
 What did I learn today?
@@ -124,6 +124,5 @@ How did I solve it?
 What am I proud of today?
 
 What do I want to improve tomorrow?
-
 
 7/31 - 8/9: Away From Setup, No Progress.
