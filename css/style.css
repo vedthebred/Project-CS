@@ -781,6 +781,25 @@ progress::-moz-progress-bar {
   color: #475569;
 }
 
+.skip-link {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1000;
+  padding: 10px 14px;
+  border: 2px solid var(--main-text);
+  border-radius: 8px;
+  background-color: var(--main-button);
+  color: var(--main-text);
+  font-weight: 700;
+  transform: translateY(-200%);
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
 @media (max-width: 900px) {
   .page-layout {
     grid-template-columns: 1fr;
@@ -846,5 +865,16 @@ progress::-moz-progress-bar {
 
   .path-right {
     justify-self: end;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
   }
 }
