@@ -1,16 +1,133 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Project CS - About</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>About - Project CS</title>
   </head>
+
   <body>
-    <h1>About Project CS</h1>
-    <p>
-      Project CS is my journey from a beginner to a full stack dev and tech
-      founder.
-    </p>
-    <a href="../index.html">Return Home</a>
+    <header class="site-header">
+      <div class="brand-wrapper">
+        <img
+          src="../assets/images/project-cs-logo.png"
+          alt="Project CS Logo"
+          class="logo"
+        />
+
+        <div class="brand-text">
+          <p class="site-title">Project CS</p>
+          <p>My dev journey, one project at a time.</p>
+        </div>
+      </div>
+
+      <nav aria-label="Primary Navigation" class="primary-nav">
+        <a href="../index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html" aria-current="page">About</a>
+      </nav>
+    </header>
+
+    <div class="page-layout">
+      <aside class="sidebar">
+        <h2>On This Page</h2>
+
+        <nav aria-label="On this page">
+          <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#why-project-cs">Why Project CS</a></li>
+            <li><a href="#journey-system">Journey System</a></li>
+            <li><a href="#long-term-goal">Long-Term Goal</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="about-page">
+        <section id="about-me" class="panel">
+          <h1>About Me</h1>
+
+          <p>
+            I am a beginner developer learning computer science by building real
+            projects. My goal is to become a full-stack developer and eventually
+            a technical founder.
+          </p>
+
+          <p>
+            Instead of waiting until I know everything, I created Project CS to
+            document the process of learning, experimenting, making mistakes,
+            and improving over time.
+          </p>
+        </section>
+
+        <section id="why-project-cs" class="panel">
+          <h2>Why I Built Project CS</h2>
+
+          <p>
+            Project CS is my first major development project. It began as a
+            website for documenting what I learn, but it will continue evolving
+            as my skills and projects grow.
+          </p>
+
+          <p>
+            The website is intentionally playful and game-inspired because it
+            represents progress rather than a finished professional portfolio.
+          </p>
+        </section>
+
+        <section id="journey-system" class="panel">
+          <h2>How the Journey Works</h2>
+
+          <dl class="journey-definitions">
+            <div>
+              <dt>World</dt>
+              <dd>
+                A major area of computer science or development that I am
+                currently learning, such as Web Development or Python.
+              </dd>
+            </div>
+
+            <div>
+              <dt>Project</dt>
+              <dd>
+                Something I build to apply the skills learned inside a
+                programming world.
+              </dd>
+            </div>
+
+            <div>
+              <dt>Quest</dt>
+              <dd>
+                The specific task or milestone that I am currently working
+                toward.
+              </dd>
+            </div>
+
+            <div>
+              <dt>Achievement</dt>
+              <dd>
+                A meaningful skill or development milestone that I have
+                completed.
+              </dd>
+            </div>
+          </dl>
+        </section>
+
+        <section id="long-term-goal" class="panel">
+          <h2>Long-Term Goal</h2>
+
+          <p>
+            My long-term goal is to become capable of designing, building, and
+            launching complete software products. Project CS will document the
+            projects and skills that move me toward becoming a full-stack
+            developer and technical founder.
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <p>Project CS - Learning by Building</p>
+    </footer>
   </body>
 </html>

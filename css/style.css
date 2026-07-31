@@ -143,6 +143,14 @@ a {
   background-color: #243827;
 }
 
+.site-title {
+  margin: 0;
+  color: var(--header-text);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
 .site-header {
   display: flex;
   justify-content: space-between;
@@ -670,6 +678,39 @@ progress::-moz-progress-bar {
   margin: 0;
   font-size: 0.8rem;
   font-weight: 600;
+}
+
+.projects-page {
+  min-width: 0;
+}
+
+.about-page {
+  min-width: 0;
+}
+
+.journey-definitions {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+}
+
+.journey-definitions div {
+  padding: 14px;
+  background-color: white;
+  border: 2px solid var(--panel-border-color);
+  border-radius: 10px;
+  box-shadow: 2px 2px 0 var(--shadow-color);
+}
+
+.journey-definitions dt {
+  margin-bottom: 4px;
+  font-weight: 700;
+  color: var(--panel-border-color);
+}
+
+.journey-definitions dd {
+  margin: 0;
+  color: var(--main-text);
 }
 
 @media (max-width: 900px) {
