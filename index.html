@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
     <title>Project CS - Home</title>
   </head>
   <body>
@@ -82,11 +83,11 @@
             <div class="progress-heading">
               <label for="current-world-progress">Current World Progress:</label
               ><!--Prettier Formatting is wierd here-->
-              <span>40%</span>
+              <span>67%</span>
             </div>
 
-            <progress id="current-world-progress" value="40" max="100">
-              40%
+            <progress id="current-world-progress" value="67" max="100">
+              67%
             </progress>
           </div>
         </section>
@@ -274,11 +275,8 @@
                 </div>
               </li>
 
-              <li
-                class="path-step path-current path-center"
-                aria-current="step"
-              >
-                <span class="path-marker" aria-hidden="true">8</span>
+              <li class="path-step path-complete path-center">
+                <span class="path-marker" aria-hidden="true">✓</span>
 
                 <div class="path-content">
                   <p class="path-title">Build Visual Roadmap</p>
@@ -286,12 +284,12 @@
                   <p class="path-meta">
                     <span>Step 8</span>
                     <span aria-hidden="true">•</span>
-                    <span class="path-status">Current</span>
+                    <span class="path-status">Complete</span>
                   </p>
                 </div>
               </li>
 
-              <li class="path-step path-locked path-right">
+              <li class="path-step path-current path-right" aria-current="step">
                 <span class="path-marker" aria-hidden="true">9</span>
 
                 <div class="path-content">
@@ -300,7 +298,7 @@
                   <p class="path-meta">
                     <span>Step 9</span>
                     <span aria-hidden="true">•</span>
-                    <span class="path-status">Locked</span>
+                    <span class="path-status">Current</span>
                   </p>
                 </div>
               </li>
