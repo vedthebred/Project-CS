@@ -15,7 +15,7 @@
           class="logo"
         />
         <div class="brand-text">
-          <h1>Project CS</h1>
+          <h1 class="site-title">Project CS</h1>
           <p>My dev journey, one project at a time.</p>
         </div>
       </div>
@@ -69,7 +69,7 @@
             </div>
             <div class="status-item">
               <dt>Current Focus</dt>
-              <dd>Multi-Page Website Architecture</dd>
+              <dd>Developer Journal Timeline</dd>
             </div>
             <div class="status-item">
               <dt>Achievements</dt>
@@ -93,8 +93,8 @@
         <section id="current-quest" class="panel">
           <h2>Current Quest</h2>
           <p>
-            Build the full Projects page and connect it to the Project CS
-            homepage
+            Build a chronological developer journal that records what I learn
+            and create.
           </p>
           <a href="#projects" class="btn">Continue Journey</a>
         </section>
@@ -435,10 +435,7 @@
                   GitHub
                 </li>
               </ul>
-              <p>
-                Current Work: Building the Projects page and multi-page
-                navigation.
-              </p>
+              <p>Current Work: Designing the Developer Journal timeline</p>
               <div class="project-actions">
                 <a
                   href="https://github.com/vedthebred/Project-CS"
@@ -596,12 +593,20 @@
 
         <section id="developer-journal" class="panel">
           <h2>Developer Journal</h2>
+          <ol class="journal-list">
+            <li class="journal-item">
+              <span class="journal-marker" aria-hidden="true"></span>
 
-          <article>
-            <h3>Learning HTML Forms</h3>
-            <p><time datetime="2026-07-23">July 23, 2026</time></p>
-            <p>I learned how to make and implement forms in HTML.</p>
-          </article>
+              <article class="journal-entry">
+                <div class="journal-heading">
+                  <h3>Learning HTML Forms</h3>
+                  <time datetime="2026-07-23">July 23, 2026</time>
+                </div>
+
+                <p>I learned how to create and implement forms in HTML.</p>
+              </article>
+            </li>
+          </ol>
         </section>
       </main>
     </div>
