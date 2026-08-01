@@ -11,8 +11,12 @@ const siteState = {
   achievementCount: 8,
 };
 
-const currentFocusElement = document.querySelector("#current-focus");
+function updateSiteState() {
+  const currentFocusElement = document.querySelector("#current-focus");
+  const currentQuestElement = document.querySelector("#current-quest-text");
 
-console.log(currentFocusElement);
+  currentFocusElement.textContent = siteState.currentFocus;
+  currentQuestElement.textContent = siteState.currentQuest;
+}
 
-currentFocusElement.textContent = siteState.currentFocus;
+updateSiteState();
