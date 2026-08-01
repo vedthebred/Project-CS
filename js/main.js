@@ -11,10 +11,8 @@ const siteState = {
   achievementCount: 8,
 };
 
-console.log("Project CS JavaScript connected.");
-console.log(projectName);
-console.log(currentStep);
-console.log(isJavaScriptUnlocked);
-console.log(siteState);
-console.log(siteState.currentFocus);
-console.log(siteState.progress);
+const currentFocusElement = document.querySelector("#current-focus");
+
+console.log(currentFocusElement);
+
+currentFocusElement.textContent = siteState.currentFocus;
