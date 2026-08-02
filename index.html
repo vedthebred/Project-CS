@@ -63,19 +63,19 @@
           <dl class="status-grid">
             <div class="status-item">
               <dt>Current World</dt>
-              <dd>Web Development</dd>
+              <dd id="current-world">Web Development</dd>
             </div>
             <div class="status-item">
               <dt>Current Project</dt>
-              <dd>Project CS</dd>
+              <dd id="current-project">Project CS</dd>
             </div>
             <div class="status-item">
               <dt>Current Focus</dt>
-              <dd id="current-focus">Developer Journal Timeline</dd>
+              <dd id="current-focus">JavaScript Fundamentals</dd>
             </div>
             <div class="status-item">
               <dt>Achievements</dt>
-              <dd>8 Completed</dd>
+              <dd id="achievement-count">8 Completed</dd>
             </div>
           </dl>
 
@@ -83,7 +83,7 @@
             <div class="progress-heading">
               <label for="current-world-progress">Current World Progress:</label
               ><!--Prettier Formatting is wierd here-->
-              <span>67%</span>
+              <span id="progress-label">67%</span>
             </div>
 
             <progress id="current-world-progress" value="67" max="100">
@@ -98,7 +98,7 @@
             Build a chronological developer journal that records what I learn
             and create.
           </p>
-          <a href="#developer-journal" class="btn">Continue Journey</a>
+          <a id="current-quest-link" href="#learning-path" class="btn">Continue Journey</a>
         </section>
 
         <section id="learning-path" class="panel">
@@ -434,7 +434,7 @@
                   GitHub
                 </li>
               </ul>
-              <p>Current Work: Designing the Developer Journal timeline</p>
+              <p id="current-work">Current Work: Learning JavaScript Fundamentals</p>
               <div class="project-actions">
                 <a
                   href="https://github.com/vedthebred/Project-CS"
