@@ -1,6 +1,12 @@
 const projectName = "Project CS";
 const currentStep = 9;
 const isJavaScriptUnlocked = true;
+const journalButton = document.getElementById("journal-toggle");
+const journalContent = document.getElementById("journal-content");
+
+journalButton.addEventListener("click", function () {
+  journalContent.hidden = true;
+});
 
 const siteState = {
   currentFocus: "JavaScript Fundamentals",
@@ -41,7 +47,7 @@ function setText(selector, text) {
   const element = document.querySelector(selector);
 
   if (!element) {
-    console.warn("Could not find element: ${selector}");
+    console.warn(`Could not find element: ${selector}`);
     return;
   }
 

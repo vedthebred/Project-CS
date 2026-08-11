@@ -98,7 +98,9 @@
             Build a chronological developer journal that records what I learn
             and create.
           </p>
-          <a id="current-quest-link" href="#learning-path" class="btn">Continue Journey</a>
+          <a id="current-quest-link" href="#learning-path" class="btn"
+            >Continue Journey</a
+          >
         </section>
 
         <section id="learning-path" class="panel">
@@ -434,7 +436,9 @@
                   GitHub
                 </li>
               </ul>
-              <p id="current-work">Current Work: Learning JavaScript Fundamentals</p>
+              <p id="current-work">
+                Current Work: Learning JavaScript Fundamentals
+              </p>
               <div class="project-actions">
                 <a
                   href="https://github.com/vedthebred/Project-CS"
@@ -592,7 +596,16 @@
 
         <section id="developer-journal" class="panel">
           <h2>Developer Journal</h2>
-          <ol class="journal-list">
+          <button
+            id="journal-toggle"
+            class="btn"
+            type="button"
+            aria-expanded="true"
+            aria-controls="journal-content"
+          >
+            Hide Journal
+          </button>
+          <ol id="journal-content" class="journal-list">
             <li class="journal-item">
               <span class="journal-marker" aria-hidden="true"></span>
 
