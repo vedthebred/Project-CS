@@ -5,7 +5,14 @@ const journalButton = document.getElementById("journal-toggle");
 const journalContent = document.getElementById("journal-content");
 
 journalButton.addEventListener("click", function () {
-  journalContent.hidden = true;
+  journalContent.hidden = !journalContent.hidden;
+  if (journalContent.hidden) {
+    journalButton.textContent = "Show Journal";
+    journalButton.setAttribute("aria-expanded", "false");
+  } else {
+    journalButton.textContent = "Hide Journal";
+    journalButton.setAttribute("aria-expanded", "true");
+  }
 });
 
 const siteState = {
