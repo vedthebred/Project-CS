@@ -2,18 +2,41 @@ const projectName = "Project CS";
 const currentStep = 9;
 const isJavaScriptUnlocked = true;
 const journalButton = document.getElementById("journal-toggle");
-const journalContent = document.getElementById("journal-content");
+let journalExpanded = false;
+const journalEntries = document.querySelectorAll(
+  "#journal-content .journal-item",
+);
+
+function updateJournalView() {
+  const latestStartIndex = journalEntries.length - 3;
+
+  journalEntries.forEach(function (entry, index) {
+    if (journalExpanded) {
+      entry.hidden = false;
+    } else {
+      if (index < latestStartIndex) {
+        entry.hidden = true;
+      } else {
+        entry.hidden = false;
+      }
+    }
+  });
+
+  if (journalExpanded) {
+    journalButton.textContent = "Show Less";
+    journalButton.setAttribute("aria-expanded", "true");
+  } else {
+    journalButton.textContent = "Show More";
+    journalButton.setAttribute("aria-expanded", "false");
+  }
+}
 
 journalButton.addEventListener("click", function () {
-  journalContent.hidden = !journalContent.hidden;
-  if (journalContent.hidden) {
-    journalButton.textContent = "Show Journal";
-    journalButton.setAttribute("aria-expanded", "false");
-  } else {
-    journalButton.textContent = "Hide Journal";
-    journalButton.setAttribute("aria-expanded", "true");
-  }
+  journalExpanded = !journalExpanded;
+  updateJournalView();
 });
+
+updateJournalView();
 
 const siteState = {
   currentFocus: "JavaScript Fundamentals",
