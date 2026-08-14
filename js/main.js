@@ -6,6 +6,34 @@ let journalExpanded = false;
 const journalEntries = document.querySelectorAll(
   "#journal-content .journal-item",
 );
+const roadmapSteps = document.querySelectorAll(".path-step");
+
+function updateRoadmap() {
+  roadmapSteps.forEach(function (step) {
+    const stepNumber = Number(step.dataset.step);
+    const marker = step.querySelector(".path-marker");
+    const status = step.querySelector(".path-status");
+
+    step.classList.remove("path-complete", "path-current", "path-locked");
+
+    step.removeAttribute("aria-current");
+
+    if (stepNumber < currentStep) {
+      step.classList.add("path-complete");
+      marker.textContent = "✓";
+      status.textContent = "Complete";
+    } else if (stepNumber === currentStep) {
+      step.classList.add("path-current");
+      marker.textContent = stepNumber;
+      status.textContent = "Current";
+      step.setAttribute("aria-current", "step");
+    } else {
+      step.classList.add("path-locked");
+      marker.textContent = stepNumber;
+      status.textContent = "Locked";
+    }
+  });
+}
 
 function updateJournalView() {
   const latestStartIndex = journalEntries.length - 3;
@@ -85,3 +113,4 @@ function setText(selector, text) {
 }
 
 updateSiteState();
+updateRoadmap();
