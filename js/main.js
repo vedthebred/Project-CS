@@ -1,3 +1,4 @@
+
 const projectName = "Project CS";
 
 const isJavaScriptUnlocked = true;
@@ -139,6 +140,14 @@ function setText(selector, text) {
   element.textContent = text;
 }
 
+async function loadSiteState() {
+  const response = await fetch("../data/site-state.json");
+  const data = await response.json();
+
+  console.log(data.currentStep);
+}
+
 updateSiteState();
 updateRoadmap();
 continueJourneyLink();
+loadSiteState();
