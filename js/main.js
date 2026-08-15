@@ -1,12 +1,23 @@
 const projectName = "Project CS";
-const currentStep = 9;
+
 const isJavaScriptUnlocked = true;
+const siteState = {
+  currentStep: 9,
+  currentProject: "Project CS",
+  currentWorld: "Web Development",
+  currentQuest:
+    "Learn JavaScript fundamentals and begin adding interactive behavior to Project CS.",
+  questLink: "#learning-path",
+  currentWork: "Learning JavaScript fundamentals.",
+};
 const journalButton = document.getElementById("journal-toggle");
 let journalExpanded = false;
 const journalEntries = document.querySelectorAll(
   "#journal-content .journal-item",
 );
+
 const roadmapSteps = document.querySelectorAll(".path-step");
+const achievementCards = document.querySelectorAll(".achievement-card");
 
 function updateRoadmap() {
   roadmapSteps.forEach(function (step) {
@@ -18,11 +29,11 @@ function updateRoadmap() {
 
     step.removeAttribute("aria-current");
 
-    if (stepNumber < currentStep) {
+    if (stepNumber < siteState.currentStep) {
       step.classList.add("path-complete");
       marker.textContent = "✓";
       status.textContent = "Complete";
-    } else if (stepNumber === currentStep) {
+    } else if (stepNumber === siteState.currentStep) {
       step.classList.add("path-current");
       marker.textContent = stepNumber;
       status.textContent = "Current";
@@ -66,32 +77,26 @@ journalButton.addEventListener("click", function () {
 
 updateJournalView();
 
-const siteState = {
-  currentFocus: "JavaScript Fundamentals",
-  currentProject: "Project CS",
-  currentWorld: "Web Development",
-  currentQuest:
-    "Learn JavaScript fundamentals and begin adding interactive behavior to Project CS.",
-  questLink: "#learning-path",
-  currentWork: "Learning JavaScript fundamentals.",
-  progress: 67,
-  achievementCount: 8,
-};
-
 function updateSiteState() {
+  const completedSteps = siteState.currentStep - 1;
+  const progress = Math.round((completedSteps / roadmapSteps.length) * 100);
+  const currentStepElement = document.querySelector(
+    `[data-step="${siteState.currentStep}"]`,
+  );
+  const currentStepTitle = currentStepElement.querySelector(".path-title");
   setText("#current-world", siteState.currentWorld);
   setText("#current-project", siteState.currentProject);
-  setText("#current-focus", siteState.currentFocus);
+  setText("#current-focus", currentStepTitle.textContent);
   setText("#current-quest-text", siteState.currentQuest);
   setText("#current-work", `Current Work: ${siteState.currentWork}`);
-  setText("#achievement-count", `${siteState.achievementCount} Completed`);
-  setText("#progress-label", `${siteState.progress}%`);
+  setText("#achievement-count", `${achievementCards.length} Completed`);
+  setText("#progress-label", `${progress}%`);
 
   const progressElement = document.querySelector("#current-world-progress");
 
   if (progressElement) {
-    progressElement.value = siteState.progress;
-    progressElement.textContent = `${siteState.progress}%`;
+    progressElement.value = progress;
+    progressElement.textContent = `${progress}%`;
   }
 
   const questLinkElement = document.querySelector("#current-quest-link");
