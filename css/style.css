@@ -831,6 +831,10 @@ progress::-moz-progress-bar {
   display: none !important;
 }
 
+.scroll-highlight .path-marker {
+  outline: 4px solid #2457ff;
+}
+
 @media (max-width: 900px) {
   .page-layout {
     grid-template-columns: 1fr;

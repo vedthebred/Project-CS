@@ -19,6 +19,28 @@ const journalEntries = document.querySelectorAll(
 const roadmapSteps = document.querySelectorAll(".path-step");
 const achievementCards = document.querySelectorAll(".achievement-card");
 
+function continueJourneyLink() {
+  const questLinkElement = document.querySelector("#current-quest-link");
+  const currentStepElement = document.querySelector(
+    `[data-step="${siteState.currentStep}"]`,
+  );
+  if (!questLinkElement || !currentStepElement) {
+    return;
+  }
+  questLinkElement.addEventListener("click", function (event) {
+    event.preventDefault();
+    currentStepElement.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
+
+    currentStepElement.classList.add("scroll-highlight");
+    setTimeout(function () {
+      currentStepElement.classList.remove("scroll-highlight");
+    }, 1500);
+  });
+}
+
 function updateRoadmap() {
   roadmapSteps.forEach(function (step) {
     const stepNumber = Number(step.dataset.step);
@@ -119,3 +141,4 @@ function setText(selector, text) {
 
 updateSiteState();
 updateRoadmap();
+continueJourneyLink();
