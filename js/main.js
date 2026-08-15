@@ -2,13 +2,13 @@ const projectName = "Project CS";
 
 const isJavaScriptUnlocked = true;
 const siteState = {
-  currentStep: 9,
+  currentStep: 10,
   currentProject: "Project CS",
   currentWorld: "Web Development",
   currentQuest:
-    "Learn JavaScript fundamentals and begin adding interactive behavior to Project CS.",
+    "Add more functionality to Project CS and make its changing data easier to manage.",
   questLink: "#learning-path",
-  currentWork: "Learning JavaScript fundamentals.",
+  currentWork: "Building more advanced JavaScript functionality.",
 };
 const journalButton = document.getElementById("journal-toggle");
 let journalExpanded = false;
