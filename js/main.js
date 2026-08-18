@@ -1,15 +1,7 @@
 const projectName = "Project CS";
 
 const isJavaScriptUnlocked = true;
-const siteState = {
-  currentStep: 10,
-  currentProject: "Project CS",
-  currentWorld: "Web Development",
-  currentQuest:
-    "Add more functionality to Project CS and make its changing data easier to manage.",
-  questLink: "#learning-path",
-  currentWork: "Building more advanced JavaScript functionality.",
-};
+let siteState;
 const journalButton = document.getElementById("journal-toggle");
 let journalExpanded = false;
 const journalEntries = document.querySelectorAll(
@@ -143,10 +135,15 @@ async function loadSiteState() {
   const response = await fetch("data/site-state.json");
   const data = await response.json();
 
-  console.log(data.currentStep);
+  return data;
 }
 
-updateSiteState();
-updateRoadmap();
-continueJourneyLink();
-loadSiteState();
+async function initializeSite() {
+  siteState = await loadSiteState();
+
+  updateSiteState();
+  updateRoadmap();
+  continueJourneyLink();
+}
+
+initializeSite();
