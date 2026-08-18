@@ -133,17 +133,24 @@ function setText(selector, text) {
 
 async function loadSiteState() {
   const response = await fetch("data/site-state.json");
+  if (!response.ok) {
+    throw new Error(`Could not load site state: ${response.status}`)
+  }
   const data = await response.json();
 
   return data;
 }
 
 async function initializeSite() {
-  siteState = await loadSiteState();
+  try {
+    siteState = await loadSiteState();
 
-  updateSiteState();
-  updateRoadmap();
-  continueJourneyLink();
+    updateSiteState();
+    updateRoadmap();
+    continueJourneyLink();
+  } catch (error) {
+    console.error(error);
+  }
 }
 
 initializeSite();
